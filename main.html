@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the Vex team and build what comes next." />
+  <title>Vex | Join the team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Vex home"><span class="brand-mark">V</span><span>VEX</span></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#why-vex">Why Vex</a>
+        <a href="#roles">Open roles</a>
+      </nav>
+      <div class="top-actions">
+        <button class="text-button" type="button" data-open-auth="login">Log in</button>
+        <button class="button button-small" type="button" data-open-auth="signup">Sign up <span aria-hidden="true">↗</span></button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Applications are open</p>
+          <h1 id="hero-title">Make your mark<br /><em>with Vex.</em></h1>
+          <p class="hero-text">We’re building a team of curious people who care about the details, move with purpose, and want to shape what comes next.</p>
+          <a class="button hero-button" href="#join">Join the team <span aria-hidden="true">↗</span></a>
+          <div class="hero-meta"><div class="avatar-stack" aria-hidden="true"><span>AK</span><span>JM</span><span>RS</span><span>+</span></div><span>Join 24 people<br />building the future</span></div>
+        </div>
+        <div class="hero-art" aria-label="Abstract Vex team illustration" role="img">
+          <div class="art-grid"></div><div class="sun"></div><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="art-label">VEX / 2026</div><div class="art-word">BUILD<br />BOLDLY</div>
+          <div class="floating-note"><span class="note-icon">✦</span><span>Great work<br /><strong>starts here</strong></span></div>
+        </div>
+      </section>
+
+      <section class="stats-band" id="why-vex" aria-label="Vex at a glance">
+        <div><strong>24</strong><span>people, one<br />shared mission</span></div><div><strong>08</strong><span>countries<br />represented</span></div><div><strong>∞</strong><span>room to grow<br />and experiment</span></div>
+      </section>
+
+      <section class="roles-section" id="roles" aria-labelledby="roles-title">
+        <div class="section-heading"><div><p class="eyebrow">Find your place</p><h2 id="roles-title">Bring your<br /><em>point of view.</em></h2></div><p>We value sharp thinking, generous collaboration, and people who are always learning. You don’t need to tick every box.</p></div>
+        <div class="role-list"><div class="role-item"><span>01</span><strong>Product &amp; Design</strong><small>Shape the experience</small><span class="role-arrow">↗</span></div><div class="role-item"><span>02</span><strong>Engineering</strong><small>Build the impossible</small><span class="role-arrow">↗</span></div><div class="role-item"><span>03</span><strong>Growth &amp; Operations</strong><small>Help us go further</small><span class="role-arrow">↗</span></div></div>
+      </section>
+
+      <section class="join-section" id="join" aria-labelledby="join-title">
+        <div class="join-intro"><p class="eyebrow light"><span class="eyebrow-dot"></span> Your next chapter</p><h2 id="join-title">Tell us<br /><em>about you.</em></h2><p>Complete the form and our team will be in touch if there’s a good match. No perfect resumes required.</p><div class="join-detail"><span>01</span><span>Usually takes<br /><strong>4 minutes</strong></span></div></div>
+        <form class="join-form" id="join-form">
+          <div class="form-heading"><span>Team application</span><span>01 / 02</span></div>
+          <div class="form-grid"><label>First name<input name="firstName" type="text" placeholder="Alex" required /></label><label>Last name<input name="lastName" type="text" placeholder="Morgan" required /></label><label>Age<input name="age" type="number" min="16" max="100" placeholder="24" required /></label><label>Email<input name="email" type="email" placeholder="alex@email.com" required /></label><label>Phone number<input name="phone" type="tel" placeholder="+1 555 000 0000" required /></label><label>Role you’re interested in<select name="role" required><option value="">Choose a path</option><option>Product & Design</option><option>Engineering</option><option>Growth & Operations</option><option>Something else</option></select></label><label>Portfolio or LinkedIn link<input name="portfolio" type="url" placeholder="https://..." required /></label><label>Availability<select name="availability" required><option value="">When can you start?</option><option>Immediately</option><option>Within 1 month</option><option>Within 3 months</option><option>Just exploring</option></select></label><label class="full-width">What would you love to work on at Vex?<textarea name="message" rows="4" placeholder="A project, an idea, or a problem you want to solve..." required></textarea></label></div>
+          <label class="consent"><input type="checkbox" name="consent" required /><span>I agree to be contacted about this application.</span></label>
+          <button class="button submit-button" type="submit">Send application <span aria-hidden="true">↗</span></button><p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer><a class="brand" href="#top"><span class="brand-mark">V</span><span>VEX</span></a><span>Make something that matters.</span><span>© 2026 Vex Studio</span></footer>
+  </div>
+
+  <div class="modal-backdrop" id="auth-modal" hidden><section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title"><button class="modal-close" type="button" aria-label="Close">×</button><p class="eyebrow">Welcome to Vex</p><h2 id="auth-title">Your work,<br /><em>your way.</em></h2><div class="auth-tabs"><button type="button" class="auth-tab active" data-auth-tab="login">Log in</button><button type="button" class="auth-tab" data-auth-tab="signup">Sign up</button></div><form id="auth-form"><label id="auth-name-field" hidden>Full name<input name="name" type="text" placeholder="Alex Morgan" /></label><label>Email<input name="email" type="email" placeholder="you@email.com" required /></label><label>Password<input name="password" type="password" minlength="6" placeholder="At least 6 characters" required /></label><button class="button submit-button" type="submit" id="auth-submit">Log in <span aria-hidden="true">↗</span></button><p class="form-status" id="auth-status" role="status"></p></form></section></div>
+  <script src="script.js"></script>
+</body>
+</html>
